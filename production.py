@@ -34,3 +34,4 @@ def division_reader(a_list):
             new_list.append(i)
 
     return result
+print(division_reader(a_list))
