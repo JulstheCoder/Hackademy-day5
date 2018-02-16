@@ -23,15 +23,14 @@ def return_square(a_list):
 
 print(return_square(a_list))
 
-def division_reader(a_list):
+def division_reader(arg1,arg2,arg3):
 
-    a_list = [a,b,c]
     new_list=[]
-    result = len(str(new_list))
 
-    for i in range(a,b):
-        if i%c == 0:
+    for i in range(arg1,arg2+1):
+        if i%arg3 == 0:
             new_list.append(i)
+    result = len(new_list)
 
     return result
-print(division_reader(a_list))
+print(division_reader(1,20,3))
