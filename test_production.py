@@ -17,3 +17,9 @@ class TestSquare(unittest.TestCase):
         input = [0,1,2,3,4,5,6,7,8,9,10]
         output = [0,1,4,9,16,25,36,49,64,81,100]
         self.assertListEqual(output,production.return_square(input))
+
+class TestDivision(unittest.TestCase):
+    def test_division_reader(self):
+        input = [22,32,3]
+        output =  [3]
+        self.assertListEqual(output,production.division_reader(input))
